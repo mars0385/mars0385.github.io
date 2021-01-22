@@ -1,0 +1,121 @@
+/***************************************
+Custom CSS
+****************************************/
+
+/* creating page header */
+header {
+    text-align: center;
+    /* adding heading image */
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+
+/* Setting stlye for entire page */
+.container {
+    background-color: lightcyan;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+html {
+    background-color: #aad4cf;
+}
+main {
+    padding: 1em;
+}
+
+/* TEXT STYLIZING / PAGE SETUP */
+h1 {
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 60px;
+    padding-top: 200px;
+    margin: 0;
+}
+/* setting default styles to body text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+/* Starfish Image styling */
+img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+/* adding padding between article and section */
+section h2 {
+    padding-top: 1em;
+}
+article ul {
+    padding-left: 0;
+}
+
+/* CONTACT FORM STYLES */
+section {
+    padding-top: 1em;
+}
+section form{
+    border: 1px solid black;
+    padding: 1em;
+}
+/* get rid of padding with facts list */
+section ul {
+    padding-left: 1em;
+    margin: 0;
+}
+/* input boxes styling*/
+textarea {
+    width: 100%;
+    padding: 3px;
+}
+#fullname, #youremail {
+    width: 100%;
+}
+
+label {
+    padding-top: 5px;
+}
+form div {
+    padding: 0.5em;
+}
+/* styling submit button */
+#button {
+    padding: 8px;
+    background-color: lightcyan;
+}
+
+
+/* Styling footer of site */
+.site-footer {
+    padding: 2em;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* STYLING NAVIGATION */
+nav li {
+    text-align: center;
+    display: inline-block;
+    width: 320px;
+    height: 50px;
+}
+nav ul a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-right: 1px solid black;
+    padding-left: 0px;
+}
+nav li:last-child {
+    border-right: none;
+}
+

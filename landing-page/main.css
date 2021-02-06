@@ -48,6 +48,3 @@ table {
                     MAIN CSS CODE
 **********************************************************/
 /* All styles not in a media query are for the mobile layout/defaults */
-html {
-	font-family: 'Montserrat', sans-serif;
-}

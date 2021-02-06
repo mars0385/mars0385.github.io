@@ -49,17 +49,19 @@ table {
 **********************************************************/
 /* All styles not in a media query are for the mobile layout/defaults */
 
-/* logo sizing */
-
-
+/* Basic page style setup */
 main {
 	font-family: 'Montserrat', sans-serif;
 }
-
 footer {
 	background-color: #fffd8c;
 }
-
 .container {
 	margin: 0 auto;
+}
+
+/* logo sizing */
+.logo {
+	width: 100px;
+	height: auto;
 }

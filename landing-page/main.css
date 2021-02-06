@@ -59,3 +59,7 @@ main {
 footer {
 	background-color: #fffd8c;
 }
+
+.container {
+	margin: 0 auto;
+}

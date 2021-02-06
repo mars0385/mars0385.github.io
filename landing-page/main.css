@@ -50,11 +50,12 @@ table {
 /* All styles not in a media query are for the mobile layout/defaults */
 
 /* logo sizing */
-.logo {
-	width: 50%;
-	height: auto;
+
+
+main {
+	font-family: 'Montserrat', sans-serif;
 }
 
-html {
-	font-family: 'Montserrat', sans-serif;
+footer {
+	background-color: #fffd8c;
 }

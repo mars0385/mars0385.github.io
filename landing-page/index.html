@@ -32,16 +32,16 @@
                 <form action="thanks.html" method="post">
                     <!-- first name -->
                     <label for="firstname"></label>
-                    <input id="firstname" placeholder="First Name">
+                    <input id="firstname" placeholder="First Name" class="appinput">
                     <!-- last name -->
                     <label for="lastname"></label>
-                    <input id="lastname" placeholder="Last name">
+                    <input id="lastname" placeholder="Last name" class="appinput">
                     <!-- email address -->
                     <label for="email"></label>
-                    <input id="email" placeholder="Email address">
+                    <input id="email" placeholder="Email address" class="appinput">
                     <!-- phone number -->
                     <label for="phone"></label>
-                    <input id="phone" placeholder="Phone number">
+                    <input id="phone" placeholder="Phone number" class="appinput">
                     <!-- agree to terms checkbox -->
                     <label for="accept">I agree to dash terms</label>
                     <input id="accept" type="checkbox">
@@ -51,24 +51,26 @@
                 <p>already applied?</p>
             </div>
         </main>
+    </div>
         
         <!-- Footer -->
         <footer>
-            <p>See how much you can earn with Dash.</p>
-            <p>How many hours do you want to drive with us this week?</p>
-            <!-- Hours calculator -->
-            <form action="thanks.html">
-                <!-- hours input -->
-                <label for="hours"></label>
-                <input id="hours" placeholder="Hours">
-                <!-- location input -->
-                <label for="city"></label>
-                <input id="city" placeholder="City">
-                <!-- calculate button -->
-                <button type="submit">CALCULATE</button>
-            </form>
+            <div class="container">
+                <p>See how much you can earn with Dash.</p>
+                <p>How many hours do you want to drive with us this week?</p>
+                <!-- Hours calculator -->
+                <form action="thanks.html">
+                    <!-- hours input -->
+                    <label for="hours"></label>
+                    <input id="hours" placeholder="Hours" class="calcinput">
+                    <!-- location input -->
+                    <label for="city"></label>
+                    <input id="city" placeholder="City" class="calcinput">
+                    <!-- calculate button -->
+                    <button type="submit" class="calcbutton">CALCULATE</button>
+                </form>
+            </div>
         </footer>
-    </div>
 </body>
 
 </html>

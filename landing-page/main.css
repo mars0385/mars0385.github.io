@@ -49,19 +49,43 @@ table {
 **********************************************************/
 /* All styles not in a media query are for the mobile layout/defaults */
 
+/* FONT DECLARATION */
+/* @font-face declarations for some header fonts */
+@font-face {
+	font-family: 'Extrabold';
+	src: url('Montserrat-ExtraBold.ttf') format('truetype');
+}
 /* Basic page style setup */
+html {
+	background-color: #f7f7ff;
+}
 main {
 	font-family: 'Montserrat', sans-serif;
+	color: #333131;
 }
 footer {
 	background-color: #fffd8c;
+	
 }
 .container {
 	margin: 0 auto;
+	padding: 30px;
 }
 
 /* logo sizing */
 .logo {
 	width: 100px;
 	height: auto;
+}
+
+/* header and text styles/sizes */
+h1 {
+	font-size: 5rem;
+	font-weight: bolder;
+}
+
+/* Application box styles */
+.apply {
+	box-shadow: 2px 2px 10px #333131;
+	border-radius: 25px;
 }

@@ -196,7 +196,7 @@ ul li{
 /********************************************
 				TABLET STYLES
 ********************************************/
-@media screen and (min-width: 415px max-width: 769px) {
+@media screen and (min-width: 415px) {
 	/**************** PAGE ELEMENT STYLES **************/
 
 	/***************** FOOTER STYLES *******************/

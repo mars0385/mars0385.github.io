@@ -60,6 +60,7 @@ html {
 	background-color: #f7f7ff;
 	font-family: 'Montserrat', sans-serif;
 	color: #333131;
+	font-size: 105%;
 }
 footer {
 	background-color: #fffd8c;
@@ -97,6 +98,8 @@ h3 {
 .apply {
 	box-shadow: 8px 10px 20px gray;
 	border-radius: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 /* adding padding, margin, etc to text elements */
 .container h2 {
@@ -136,15 +139,45 @@ button.drivebutt {
 	font-weight: bold;
 	font-size: 1.5rem;
 }
+/* Check application status hyperlink styling */
+a {
+	display: inline-block;
+	text-decoration: none;
+}
 
 
 /************** FOOTER STYLES **************/
+/* Footer text styling */
+h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+footer p {
+	padding-bottom: 10px;
+}
+/* Calculate button / input styles */
 .calcbutton {
 	width: 100%;
+	border: 0px;
+	border-radius: 10px;
+	background-color: #ff8480;
+	color:  #f7f7ff;
+	padding: 10px;
+	margin-top: 10px;
+	/* text styles */
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+/* input box styles */
+#hours, #city {
+	border: 0px;
+	border-radius: 10px;
+	padding: 10px;
 }
 #hours {
-	width: 33%;
+	width: 80px;
 }
-#days {
-	width: 66%;
+#city {
+	width: 220px;
 }

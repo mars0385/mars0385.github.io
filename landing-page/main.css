@@ -143,6 +143,7 @@ button.drivebutt {
 a {
 	display: inline-block;
 	text-decoration: none;
+	color: #ff8480;
 }
 
 
@@ -181,3 +182,10 @@ footer p {
 #city {
 	width: 220px;
 }
+/* Social media buttons styling */
+ul li{
+	display: inline-block;
+	padding: 25px;
+	padding-bottom: 0px;
+}
+

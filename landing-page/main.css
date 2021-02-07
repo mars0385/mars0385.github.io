@@ -70,6 +70,9 @@ footer {
 	margin: 0 auto;
 	padding: 30px;
 }
+.page-align {
+	margin: 0 auto;
+}
 
 
 /*********** PAGE ELEMENT STYLES *************/
@@ -189,3 +192,22 @@ ul li{
 	padding-bottom: 0px;
 }
 
+
+/********************************************
+				TABLET STYLES
+********************************************/
+@media screen and (min-width: 415px max-width: 769px) {
+	/**************** PAGE ELEMENT STYLES **************/
+
+	/***************** FOOTER STYLES *******************/
+}
+
+
+/*********************************************
+				DESKTOP STYLES
+*********************************************/
+@media screen and (min-width: 770px) {
+	/**************** PAGE ELEMENT STYLES **************/
+
+	/***************** FOOTER STYLES *******************/
+}

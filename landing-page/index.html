@@ -8,6 +8,7 @@
     <!-- font declarations -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- linking html -->
     <link rel="stylesheet" href="main.css">
     <title>Landing Page</title>
@@ -21,34 +22,38 @@
             <img src="images/logo/logo.png" alt="logo" class="logo">
             <!-- Title -->
             <h1>Want to be your own boss?</h1>
-            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
             <!-- Scooter image -->
             <img src="images/bg-image/scooter.svg" alt="scooter girl">
             <!-- Application box pop up -->
             <div class="apply">
-                <h2>Apply Now</h2>
-                <h3>Enter your info below</h3>
-                <!-- Application Form Information input -->
-                <form action="thanks.html" method="post">
-                    <!-- first name -->
-                    <label for="firstname"></label>
-                    <input id="firstname" placeholder="First Name" class="appinput">
-                    <!-- last name -->
-                    <label for="lastname"></label>
-                    <input id="lastname" placeholder="Last name" class="appinput">
-                    <!-- email address -->
-                    <label for="email"></label>
-                    <input id="email" placeholder="Email address" class="appinput">
-                    <!-- phone number -->
-                    <label for="phone"></label>
-                    <input id="phone" placeholder="Phone number" class="appinput">
-                    <!-- agree to terms checkbox -->
-                    <label for="accept">I agree to dash terms</label>
-                    <input id="accept" type="checkbox">
-                    <!-- accept button -->
-                    <button type="submit">DRIVE WITH US</button>
-                </form>
-                <p>already applied?</p>
+                <div class="container">
+                    <h2>Apply Now</h2>
+                    <p>Enter your info below</p>
+                    <!-- Application Form Information input -->
+                    <form action="thanks.html" method="post">
+                        <!-- first name -->
+                        <label for="firstname"></label>
+                        <input id="firstname" placeholder="First name" class="appinput">
+                        <!-- last name -->
+                        <label for="lastname"></label>
+                        <input id="lastname" placeholder="Last name" class="appinput">
+                        <!-- phone number -->
+                        <label for="phone"></label>
+                        <input id="phone" placeholder="Phone number" class="appinput">
+                        <!-- email address -->
+                        <label for="email"></label>
+                        <input id="email" placeholder="Email Address" class="appinput">
+                        <!-- agree to terms checkbox -->
+                        <label for="accept" class="accept">
+                            <input id="accept" type="checkbox" class="checkbox">
+                            I agree to dash terms
+                        </label>
+                        <!-- accept button -->
+                        <button type="submit" class="drivebutt">DRIVE WITH US</button>
+                    </form>
+                    <p>already applied?</p>
+                </div>
             </div>
         </main>
     </div>

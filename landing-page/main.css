@@ -58,8 +58,6 @@ table {
 /************ DEFAULT PAGE STYLES *************/
 html {
 	background-color: #f7f7ff;
-}
-main {
 	font-family: 'Montserrat', sans-serif;
 	color: #333131;
 }
@@ -76,20 +74,67 @@ footer {
 /*********** PAGE ELEMENT STYLES *************/
 /* logo sizing */
 .logo {
-	width: 100px;
+	width: 125px;
 	height: auto;
+	padding-bottom: 20px;
 }
-
 /* header and text styles/sizes */
 h1 {
 	font-size: 5rem;
-	font-weight: bolder;
+	font-weight: bold;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.75rem;
+	padding-top: 10px;
 }
 
 /* Application box styles */
+/* adding box shadow and rounding corners */
 .apply {
-	box-shadow: 2px 2px 10px #333131;
+	box-shadow: 8px 10px 20px gray;
 	border-radius: 25px;
+}
+/* adding padding, margin, etc to text elements */
+.container h2 {
+	padding-bottom: 20px;
+}
+/* input boxes styles */
+.appinput {
+	border: 0px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: 1rem;
+	width: 100%;
+}
+/* Making the placeholder text a lighter color to contrast the other headings */
+::placeholder {
+	color: rgb(180, 180, 180);
+}
+/* checkbox button styles */
+.checkbox {
+	height: 25px;
+	width: 25px;
+}
+label, input {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* DRIVE WITH US button styles */
+button.drivebutt {
+	border: 0px;
+	border-radius: 20px;
+	background-color: #57eeab;
+	padding: 17px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	/* text styles */
+	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 

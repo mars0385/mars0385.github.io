@@ -55,7 +55,7 @@ table {
 	font-family: 'Extrabold';
 	src: url('Montserrat-ExtraBold.ttf') format('truetype');
 }
-/* Basic page style setup */
+/************ DEFAULT PAGE STYLES *************/
 html {
 	background-color: #f7f7ff;
 }
@@ -72,6 +72,8 @@ footer {
 	padding: 30px;
 }
 
+
+/*********** PAGE ELEMENT STYLES *************/
 /* logo sizing */
 .logo {
 	width: 100px;
@@ -88,4 +90,16 @@ h1 {
 .apply {
 	box-shadow: 2px 2px 10px #333131;
 	border-radius: 25px;
+}
+
+
+/************** FOOTER STYLES **************/
+.calcbutton {
+	width: 100%;
+}
+#hours {
+	width: 33%;
+}
+#days {
+	width: 66%;
 }

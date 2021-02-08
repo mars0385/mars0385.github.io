@@ -16,8 +16,6 @@
 
 <!-- Main HTML Page -->
 <body>
-    <!-- adding div to select entire page to align margin: 0 auto -->
-    <div class="page-align">
         <div class="container">
             <main>
                 <!-- Page logo -->
@@ -68,14 +66,23 @@
                 <p>How many hours do you want to drive with us this week?</p>
                 <!-- Hours calculator -->
                 <form action="thanks.html">
-                    <!-- hours input -->
-                    <label for="hours"></label>
-                    <input id="hours" placeholder="Hours">
-                    <!-- location input -->
-                    <label for="city"></label>
-                    <input id="city" placeholder="City">
-                    <!-- calculate button -->
-                    <button type="submit" class="calcbutton">CALCULATE</button>
+                    <!-- adding div for the flexbox declaration -->
+                    <div class="footerflex">
+                        <!-- hours input -->
+                        <div id="flexhours">
+                            <label for="hours"></label>
+                            <input id="hours" placeholder="Hours">
+                        </div>
+                        <!-- location input -->
+                        <div id="flexcity">
+                            <label for="city"></label>
+                            <input id="city" placeholder="City">
+                        </div>
+                        <!-- calculate button -->
+                        <div id="flexcalc">
+                            <button type="submit" class="calcbutton">CALCULATE</button>
+                        </div>
+                    </div>
                 </form>
                 <!-- Social Media icons -->
                 <ul class="social">
@@ -106,7 +113,6 @@
                 </ul>
             </div>
         </footer>
-    </div>
 </body>
     
 </html>

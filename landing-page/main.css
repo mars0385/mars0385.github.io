@@ -69,16 +69,15 @@ footer {
 .container {
 	margin: 0 auto;
 	padding: 30px;
+	max-width: 85%;
 }
-.page-align {
-	margin: 0 auto;
-}
+
 
 
 /*********** PAGE ELEMENT STYLES *************/
 /* logo sizing */
 .logo {
-	width: 125px;
+	width: 50%;
 	height: auto;
 	padding-bottom: 20px;
 }
@@ -174,17 +173,15 @@ footer p {
 	font-size: 1.5rem;
 }
 /* input box styles */
+.footerflex {
+	display: flex;
+}
 #hours, #city {
 	border: 0px;
 	border-radius: 10px;
 	padding: 10px;
 }
-#hours {
-	width: 80px;
-}
-#city {
-	width: 220px;
-}
+
 /* Social media buttons styling */
 ul li{
 	display: inline-block;
@@ -196,9 +193,9 @@ ul li{
 /********************************************
 				TABLET STYLES
 ********************************************/
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 560px) {
 	/**************** PAGE ELEMENT STYLES **************/
-
+	
 	/***************** FOOTER STYLES *******************/
 }
 
@@ -206,7 +203,7 @@ ul li{
 /*********************************************
 				DESKTOP STYLES
 *********************************************/
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 760px) {
 	/**************** PAGE ELEMENT STYLES **************/
 
 	/***************** FOOTER STYLES *******************/

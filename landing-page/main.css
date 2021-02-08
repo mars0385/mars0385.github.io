@@ -164,7 +164,7 @@ h4 {
 footer p {
 	padding-bottom: 10px;
 }
-/* Calculate button / input styles */
+/* Calculate button styles */
 .calcbutton {
 	width: 100%;
 	border: 0px;
@@ -173,25 +173,42 @@ footer p {
 	color:  #f7f7ff;
 	padding: 10px;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	/* text styles */
 	font-weight: bold;
 	font-size: 1.5rem;
 }
-/* input box styles */
-.footerflex {
-	display: flex;
+/* input box grid styles and setup */
+.footergrid {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
 }
+/* layout of hours input box grid */
+#hoursgrid {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+/* layout of city input box grid */
+#citygrid {
+	grid-column-start: 2;
+	grid-column-end: span 2;	
+}
+#calcgrid {
+	grid-column-start: 1;
+	grid-column-end: span 3;	
+}
+/* input box styles */
 #hours, #city {
 	border: 0px;
 	border-radius: 10px;
+	display: inline-block;
+	width: auto;
 	padding: 10px;
 }
-
-/* Social media buttons styling */
-ul li{
-	display: inline-block;
-	padding: 25px;
-	padding-bottom: 0px;
+/* Social media buttons flexbox styling */
+.social {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 

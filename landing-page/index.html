@@ -20,42 +20,51 @@
             <main>
                 <!-- Page logo -->
                 <img src="images/logo/logo.png" alt="logo" class="logo">
-                <!-- Title -->
-                <h1>Want to be your own boss?</h1>
-                <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
-                <!-- Scooter image -->
-                <img src="images/bg-image/scooter.svg" alt="scooter girl" class="scooter">
-                <!-- Application box pop up -->
-                <div class="apply">
-                    <div class="container">
-                        <h2>Apply Now</h2>
-                        <h5>Enter your info below.</h5>
-                        <!-- Application Form Information input -->
-                        <form action="thanks.html" method="post">
-                            <!-- first name -->
-                            <label for="firstname"></label>
-                            <input id="firstname" placeholder="First name" class="appinput">
-                            <!-- last name -->
-                            <label for="lastname"></label>
-                            <input id="lastname" placeholder="Last name" class="appinput">
-                            <!-- phone number -->
-                            <label for="phone"></label>
-                            <input id="phone" placeholder="Phone number" class="appinput">
-                            <!-- email address -->
-                            <label for="email"></label>
-                            <input id="email" placeholder="Email Address" class="appinput">
-                            <!-- agree to terms checkbox -->
-                            <label for="accept" class="accept">
-                                <input id="accept" type="checkbox" class="checkbox">
-                                I agree to dash terms
-                            </label>
-                            <!-- accept button -->
-                            <button type="submit" class="drivebutt">DRIVE WITH US</button>
-                        </form>
-                        <p>
-                            Already applied?
-                            <a href="">Check your application status here</a>
-                        </p> 
+                <!-- Creating a flex container to change layout in media query -->
+                <div class="mainflex">
+                    <!-- Title -->
+                    <div class="titleflex">
+                        <h1>Want to be your own boss?</h1>
+                        <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
+                    </div>
+                    <!-- Scooter image -->
+                    <div class="scooterflex">
+                        <img src="images/bg-image/scooter.svg" alt="scooter girl" class="scooter">
+                    </div>
+                    <div class="applyflex">
+                        <!-- Application box pop up -->
+                        <div class="apply">
+                            <div class="container">
+                                <h2>Apply Now</h2>
+                                <h5>Enter your info below.</h5>
+                                <!-- Application Form Information input -->
+                                <form action="thanks.html" method="post">
+                                    <!-- first name -->
+                                    <label for="firstname"></label>
+                                    <input id="firstname" placeholder="First name" class="appinput">
+                                    <!-- last name -->
+                                    <label for="lastname"></label>
+                                    <input id="lastname" placeholder="Last name" class="appinput">
+                                    <!-- phone number -->
+                                    <label for="phone"></label>
+                                    <input id="phone" placeholder="Phone number" class="appinput">
+                                    <!-- email address -->
+                                    <label for="email"></label>
+                                    <input id="email" placeholder="Email Address" class="appinput">
+                                    <!-- agree to terms checkbox -->
+                                    <label for="accept" class="accept">
+                                        <input id="accept" type="checkbox" class="checkbox">
+                                        I agree to dash terms
+                                    </label>
+                                    <!-- accept button -->
+                                    <button type="submit" class="drivebutt">DRIVE WITH US</button>
+                                </form>
+                                <p>
+                                    Already applied?
+                                    <a href="">Check your application status here</a>
+                                </p> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -64,53 +73,62 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <h4>See how much you can earn with Dash.</h4>
-                <p>How many hours do you want to drive with us this week?</p>
-                <!-- Hours calculator -->
-                <form action="thanks.html">
-                    <!-- adding div for the flexbox declaration -->
-                    <div class="footergrid">
-                        <!-- hours input -->
-                        <div id="hoursgrid">
-                            <label for="hours"></label>
-                            <input id="hours" placeholder="Hours">
+                <!-- Creating a flex container to change layout in media query -->
+                <div class="footerflex">
+                    <!-- Flexbox for the form -->
+                    <div class="formflex">
+                        <h4>See how much you can earn with Dash.</h4>
+                        <p>How many hours do you want to drive with us this week?</p>
+                        <!-- Hours calculator -->
+                        <form action="thanks.html">
+                            <!-- adding div for the flexbox declaration -->
+                            <div class="footergrid">
+                                <!-- hours input -->
+                                <div id="hoursgrid">
+                                    <label for="hours"></label>
+                                    <input id="hours" placeholder="Hours">
+                                </div>
+                                <!-- location input -->
+                                <div id="citygrid">
+                                    <label for="city"></label>
+                                    <input id="city" placeholder="City">
+                                </div>
+                                <!-- calculate button -->
+                                <div id="calcgrid">
+                                    <button type="submit" class="calcbutton">CALCULATE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Flexbox for social media icons -->
+                    <div class="socialflex">
+                        <!-- Social Media icons -->
+                        <div class="social">
+                            <!-- facebook icon -->
+                            <div>
+                                <a href="">
+                                    <img src="images/icons/facebook.svg" alt="facebook">
+                                </a>
+                            </div>
+                            <!-- instagram icon -->
+                            <div>
+                                <a href="">
+                                    <img src="images/icons/instagram.svg" alt="instagram">
+                                </a>
+                            </div>
+                            <!-- twitter icon -->
+                            <div>
+                                <a href="">
+                                    <img src="images/icons/twitter.svg" alt="twitter">
+                                </a>
+                            </div>
+                            <!-- linkedin icon -->
+                            <div>
+                                <a href="">
+                                    <img src="images/icons/linkedin.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
-                        <!-- location input -->
-                        <div id="citygrid">
-                            <label for="city"></label>
-                            <input id="city" placeholder="City">
-                        </div>
-                        <!-- calculate button -->
-                        <div id="calcgrid">
-                            <button type="submit" class="calcbutton">CALCULATE</button>
-                        </div>
-                    </div>
-                </form>
-                <!-- Social Media icons -->
-                <div class="social">
-                    <!-- facebook icon -->
-                    <div>
-                        <a href="">
-                            <img src="images/icons/facebook.svg" alt="facebook">
-                        </a>
-                    </div>
-                    <!-- instagram icon -->
-                    <div>
-                        <a href="">
-                            <img src="images/icons/instagram.svg" alt="instagram">
-                        </a>
-                    </div>
-                    <!-- twitter icon -->
-                    <div>
-                        <a href="">
-                            <img src="images/icons/twitter.svg" alt="twitter">
-                        </a>
-                    </div>
-                    <!-- linkedin icon -->
-                    <div>
-                        <a href="">
-                            <img src="images/icons/linkedin.svg" alt="linkedin">
-                        </a>
                     </div>
                 </div>
             </div>

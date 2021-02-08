@@ -162,6 +162,7 @@ footer p {
 /* Calculate button styles */
 .calcbutton {
 	width: 100%;
+	height: auto;
 	border: 0px;
 	border-radius: 10px;
 	background-color: #ff8480;
@@ -204,7 +205,7 @@ footer p {
 	border-radius: 10px;
 	box-sizing: border-box;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	padding: 10px;
 }
 /* Social media buttons flexbox styling */
@@ -233,19 +234,26 @@ footer p {
 		font-size: 2rem;
 	}
 	/***************** FOOTER STYLES *******************/
-	/* changing the grid layout so all elements are inline */
-	.footergrid {
-		display: flex;
-	}
-	/* changing style of calculator button to fit with input boxes */
+	/* Changing the button styles to match the input boxes */
 	.calcbutton {
 		font-size: 100%;
-		border: 0px;
 		border-radius: 10px;
 		box-sizing: border-box;
 		width: 100%;
-		height: 100%;
+		height: auto;
 		padding: 10px;
+	}
+	/* layout of city input box grid */
+	#citygrid {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		text-align: center;	
+	}
+	/* layout of the calculate button */
+	#calcgrid {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		text-align: center;	
 	}
 	
 }
@@ -255,8 +263,53 @@ footer p {
 /*********************************************
 				DESKTOP STYLES
 *********************************************/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
+	/************ DEFAULT PAGE STYLES *************/
+	/* changing the width of the container to allow for more space on either side */
+	.container {
+		max-width: 90%;
+	}
+	main {
+		background-image: url("scooter.svg");
+	}
 	/**************** PAGE ELEMENT STYLES **************/
-
+	/* crerating a flex box page for re arranging elements */
+	.mainflex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	/* logo sizing */
+	.logo {
+		width: 10%;
+		padding-bottom: 20px;
+	}
+	/* setting widths of each of the flexbox properties */
+	.applyflex, .titleflex, .scooterflex {
+		width: 33%;
+	}
+	/* taking the margin off the top of the apply now form */
+	.apply {
+		margin-top: 0px;
+	}
+	/* making image inside flexbox transparent as to not interfere with the page background */
+	.scooterflex {
+		opacity: 0;
+	}
+	/* Changing the size of the font on the apply now form to be smaller */
+	h5 {
+		font-size: 1.25rem;
+	}
+	main {
+		background-image: url("images/bg-image/scooter.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		z-index: -1;
+	}
 	/***************** FOOTER STYLES *******************/
+	.footerflex {
+		display: flex;
+		justify-content: space-between;
+	}
 }

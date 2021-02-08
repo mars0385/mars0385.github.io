@@ -73,7 +73,6 @@ footer {
 }
 
 
-
 /*********** PAGE ELEMENT STYLES *************/
 /* header and text styles/sizes */
 h1 {
@@ -172,8 +171,7 @@ footer p {
 	background-color: #ff8480;
 	color:  #f7f7ff;
 	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	/* text styles */
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -182,50 +180,78 @@ footer p {
 .footergrid {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
+	gap: 10px;
+	margin: 0 auto;
 }
 /* layout of hours input box grid */
 #hoursgrid {
 	grid-column-start: 1;
 	grid-column-end: 2;
+	text-align: center;
 }
 /* layout of city input box grid */
 #citygrid {
 	grid-column-start: 2;
-	grid-column-end: span 2;	
+	grid-column-end: span 2;
+	text-align: center;	
 }
+/* layout of the calculate button */
 #calcgrid {
 	grid-column-start: 1;
-	grid-column-end: span 3;	
+	grid-column-end: span 3;
+	text-align: center;	
 }
 /* input box styles */
 #hours, #city {
 	border: 0px;
 	border-radius: 10px;
-	display: inline-block;
-	width: auto;
+	box-sizing: border-box;
+	width: 100%;
 	padding: 10px;
 }
 /* Social media buttons flexbox styling */
 .social {
 	display: flex;
 	justify-content: space-evenly;
+	max-width: 500px;
+	margin: 0 auto;
+	width: 100%;
 }
+
 
 
 /********************************************
 				TABLET STYLES
 ********************************************/
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 600px) {
 	/**************** PAGE ELEMENT STYLES **************/
-	
+	/************ DEFAULT PAGE STYLES *************/
+	html {
+		background-color: #f7f7ff;
+		font-family: 'Montserrat', sans-serif;
+		color: #333131;
+		font-size: 105%;
+	}
+	footer {
+		background-color: #fffd8c;
+		
+	}
+	.container {
+		margin: 0 auto;
+		padding: 30px;
+		max-width: 85%;
+	}
+
 	/***************** FOOTER STYLES *******************/
+
 }
+
 
 
 /*********************************************
 				DESKTOP STYLES
 *********************************************/
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 800px) {
 	/**************** PAGE ELEMENT STYLES **************/
 
 	/***************** FOOTER STYLES *******************/

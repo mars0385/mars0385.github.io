@@ -60,7 +60,7 @@ html {
 	background-color: #f7f7ff;
 	font-family: 'Montserrat', sans-serif;
 	color: #333131;
-	font-size: 105%;
+	font-size: 100%;
 }
 footer {
 	background-color: #fffd8c;
@@ -71,8 +71,6 @@ footer {
 	padding: 30px;
 	max-width: 85%;
 }
-
-
 /*********** PAGE ELEMENT STYLES *************/
 /* header and text styles/sizes */
 h1 {
@@ -151,8 +149,6 @@ a {
 	text-decoration: none;
 	color: #ff8480;
 }
-
-
 /************** FOOTER STYLES **************/
 /* Footer text styling */
 h4 {
@@ -171,7 +167,6 @@ footer p {
 	background-color: #ff8480;
 	color:  #f7f7ff;
 	padding: 10px;
-	margin-bottom: 30px;
 	/* text styles */
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -179,9 +174,11 @@ footer p {
 /* input box grid styles and setup */
 .footergrid {
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
 	gap: 10px;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 /* layout of hours input box grid */
 #hoursgrid {
@@ -207,6 +204,7 @@ footer p {
 	border-radius: 10px;
 	box-sizing: border-box;
 	width: 100%;
+	height: 100%;
 	padding: 10px;
 }
 /* Social media buttons flexbox styling */
@@ -223,27 +221,33 @@ footer p {
 /********************************************
 				TABLET STYLES
 ********************************************/
-@media screen and (min-width: 600px) {
-	/**************** PAGE ELEMENT STYLES **************/
+@media screen and (min-width: 650px) {
 	/************ DEFAULT PAGE STYLES *************/
-	html {
-		background-color: #f7f7ff;
-		font-family: 'Montserrat', sans-serif;
-		color: #333131;
-		font-size: 105%;
-	}
-	footer {
-		background-color: #fffd8c;
-		
-	}
+	/* changing the width of the container to allow for more space on either side */
 	.container {
-		margin: 0 auto;
-		padding: 30px;
-		max-width: 85%;
+		max-width: 75%;
 	}
-
+	/**************** PAGE ELEMENT STYLES **************/
+	/* Changing the size of the font on the apply now form to be bigger */
+	h5 {
+		font-size: 2rem;
+	}
 	/***************** FOOTER STYLES *******************/
-
+	/* changing the grid layout so all elements are inline */
+	.footergrid {
+		display: flex;
+	}
+	/* changing style of calculator button to fit with input boxes */
+	.calcbutton {
+		font-size: 100%;
+		border: 0px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+	}
+	
 }
 
 
@@ -251,7 +255,7 @@ footer p {
 /*********************************************
 				DESKTOP STYLES
 *********************************************/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 	/**************** PAGE ELEMENT STYLES **************/
 
 	/***************** FOOTER STYLES *******************/

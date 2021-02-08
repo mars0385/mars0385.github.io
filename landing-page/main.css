@@ -75,12 +75,6 @@ footer {
 
 
 /*********** PAGE ELEMENT STYLES *************/
-/* logo sizing */
-.logo {
-	width: 50%;
-	height: auto;
-	padding-bottom: 20px;
-}
 /* header and text styles/sizes */
 h1 {
 	font-size: 5rem;
@@ -93,6 +87,17 @@ h2 {
 h3 {
 	font-size: 1.75rem;
 	padding-top: 10px;
+}
+/* logo sizing */
+.logo {
+	width: 25%;
+	height: auto;
+	padding-bottom: 20px;
+}
+/* scooter image sizing */
+.scooter {
+	width:auto;
+	height: auto;
 }
 
 /* Application box styles */

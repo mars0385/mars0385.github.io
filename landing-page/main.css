@@ -305,7 +305,7 @@ footer p {
 		background-image: url("images/bg-image/scooter.svg");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: auto 600px;
+		background-size: auto 450px;
 		z-index: -1;
 	}
 	/***************** FOOTER STYLES *******************/
@@ -322,5 +322,17 @@ footer p {
 	.footergrid {
 		margin-bottom: 0px;
 	}
-
+	/* reordering social media icons */
+	#facebookicon {
+		order: 3;
+	}
+	#instagramicon {
+		order: 1;
+	}
+	#twittericon {
+		order: 2;
+	}
+	#linkedinicon {
+		order: 4;
+	}
 }

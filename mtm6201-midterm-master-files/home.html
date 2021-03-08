@@ -15,84 +15,124 @@
 
 <!-- MAIN HTML PAGE -->
 <body>
-    <div class="container">
-        <!-- NAVIGATION -->
-        <div class="navigation">
-            <div class="logo"><img src="images/logo.svg" alt="logo" class="logo"></div>
-            <div class="home">
-                <a href="home.html">Home</a>
-            </div>
-            <div class="about">
-                <a href="about.html">About</a>
-            </div>
-            <div class="contact">
-                <a href="contact.html">Contact</a>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <div class="logo"><img src="images/logo.svg" alt="logo" class="logo"></div>
+        <div class="home">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="about">
+            <a href="about.html">About</a>
+        </div>
+        <div class="contact">
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- intro section of home page -->
+        <div class="home-intro">
+            <div class="container">
+                <!-- heading and intro text -->
+                <div>
+                    <h1>Discover Your ARC</h1>
+                    <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+                </div>
+                <!-- Grid for activity types -->
+                <div class="activity">
+                    <div class="bowling">
+                        <img src="images/bowling-ball-solid.svg" alt="bowling-ball-solid">
+                        <p>Bowling</p>
+                    </div>
+                    <div class="climbing">
+                        <img src="images/running-solid.svg" alt="rock climbing">
+                        <p>Rock Climbing</p>
+                    </div>
+                    <div class="fitness">
+                        <img src="images/dumbbell-solid.svg" alt="dumbbells">
+                        <p>Fitness Center</p>
+                    </div>
+                    <div class="court">
+                        <img src="images/basketball-ball-solid.svg" alt="ball">
+                        <p>Indoor Court</p>
+                    </div>
+                </div>
+                <!-- Get started button -->
+                <div>
+                    <button class="startbutton">Get Started</button>
+                </div>
+                <!-- Discover image -->
+                <div>
+                    <img src="images/discover.svg" alt="discover" class="discover-img">
+                </div>
             </div>
         </div>
-        <!-- MAIN CONTENT -->
-        <main>
-            <h1>Discover Your ARC</h1>
-            <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
-            <!-- Grid for activity types -->
-            <div class="activity">
-                <div class="bowling">
-                    <p>Bowling</p>
-                </div>
-                <div class="climbing">
-                    <p>Rock Climbing</p>
-                </div>
-                <div class="fitness">
-                    <p>Fitness Center</p>
-                </div>
-                <div class="court">
-                    <p>Indoor Court</p>
-                </div>
+        <!-- Discover - Algonquin section -->
+        <div class="home-algonquin">
+            <div>
+                <!-- school image header -->
+                <img src="images/school.jpg" alt="school" class= "school-img">
             </div>
-            <!-- Get started button -->
-            <button class="startbutton">Get Started</button>
-            <img src="images/discover.svg" alt="discover">
-            <!-- Discover - Algonquin section -->
-            <div class="algonquin">
+            <!-- headings and text of section -->
+            <div class="container">
                 <h2>Discover.</h2>
                 <h3>Algonquin College</h3>
                 <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario. Western Quebec, and Upstate New York.</p>
+            </div>
+            <!-- learn more button -->
+            <div class="container">
                 <button class="learnmore">Learn More</button>
             </div>
-            <!-- President section -->
-            <div class="president">
-                <img src="images/simon.jpg" alt="Dijanelle Simon">
-                <h4>Dijanelle Simon</h4>
-                <h4>SA President</h4>
-                <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."</p>
+        </div>
+        <!-- President section -->
+        <div class="home-president">
+            <div class="container">
+                <div>
+                    <img src="images/simon.jpg" alt="Dijanelle Simon" class="president-img">
+                </div>
+                <div>
+                    <h4>Dijanelle Simon</h4>
+                    <h4>SA President</h4>
+                </div>
+                <div>
+                    <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."</p>
+                </div>
             </div>
-            <!-- Discover - entertainment section -->
-            <div class="entertainment">
+        </div>
+        <!-- Discover - entertainment section -->
+        <div class="home-entertain">
+            <div>
+                <img src="images/entertainment.jpg" alt="entertainment" class="entertain-img">
+            </div>
+            <div class="container">
                 <h2>Discover.</h2>
                 <h3>The entertainment</h3>
                 <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+            </div>
+            <div class="container">
                 <button class="learnmore">Learn More</button>
             </div>
-    
-        </main>
-        <!-- FOOTER CONTENT -->
-        <footer>
-            <h5>Follow Us</h5>
-            <div class="socials">
-                <div class="facebook">
-                    <img src="icons/facebook.svg" alt="facebook">
-                </div>
-                <div class="instagram">
-                    <img src="icons/instagram.svg" alt="instagram">
-                </div>
-                <div class="twitter">
-                    <img src="icons/twitter.svg" alt="twitter">
-                </div>
-                <div class="youtube">
-                    <img src="icons/youtube.svg" alt="youtube">
-                </div>
+        </div>
+
+    </main>
+    <!-- FOOTER CONTENT -->
+    <footer>
+        <h5>Follow Us</h5>
+        <div class="socials">
+            <div class="facebook">
+                <img src="icons/facebook.svg" alt="facebook">
             </div>
-        </footer>
-    </div>
+            <div class="instagram">
+                <img src="icons/instagram.svg" alt="instagram">
+            </div>
+            <div class="twitter">
+                <img src="icons/twitter.svg" alt="twitter">
+            </div>
+            <div class="youtube">
+                <img src="icons/youtube.svg" alt="youtube">
+            </div>
+        </div>
+    </footer>
 
 </body>
 

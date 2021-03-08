@@ -53,12 +53,14 @@ table {
 html {
     font-family: 'Raleway', sans-serif;
     color: #3c3b3a;
+    margin: 0 auto;
 }
 footer {
     background-color: #3c3b3a;
 }
 .container {
     margin: 0 auto;
+    max-width: 90%;
 }
 .navigation {
     background-color:#3c3b3a;
@@ -82,9 +84,67 @@ h4 {
     font-size: 2rem;
     color: #f2f2f2;
 }
-/******************* PAGE ELEMENT STYLES **********************/
+/***************** GENERAL PAGE ELEMENT STYLES ********************/
 /* Page logo sizing */
 .logo {
     width: 100px;
+    height: auto;
+}
+/* navigation link styles */
+.navigation a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+/***************************************************************
+                        HOME PAGE STYLES
+***************************************************************/
+/* all styles and media queries for the Home page of the site will be found in this section of the css */
+
+/******************* HOME - INTRO STYLES **********************/
+.home-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.home-intro h1{
+    padding: 0px;
+}
+.discover-img {
+    width: 350px;
+    height: auto;
+}
+/* Grid stlyes and formatting */
+.activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.activity p {
+    color: #26a682;
+}
+.activity img {
+    width: 35px;
+    height: auto;
+    padding: 5px;
+    color: #3c3b3a;
+}
+/******************* HOME - DISCOVER SECTION *********************/
+/* resizing school image*/
+.school-img {
+    width: 100%;
+    height: auto;
+}
+/******************* HOME - PRESIDENT SECTION *********************/
+.home-president {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+}
+.president-img {
+    width: 100px;
+    height: auto;
+}
+/***************** HOME - ENTERTAINMENT SECTION *******************/
+.entertain-img {
+    width: 100%;
     height: auto;
 }

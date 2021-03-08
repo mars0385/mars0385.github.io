@@ -48,6 +48,17 @@ table {
                     MAIN CSS CODE
 **********************************************************/
 /* All styles not in a media query are for the mobile layout/defaults */
+
+/**************** DEFAULT PAGE STYLES ********************/
+html {
+    font-family: 'Raleway', sans-serif;
+}
+footer {
+    background-color: #3c3b3a;
+}
+.container {
+    margin: 0 auto;
+}
 .navigation {
     background-color:#3c3b3a;
 }

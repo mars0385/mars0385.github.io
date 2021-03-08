@@ -237,10 +237,9 @@ footer p {
 	/* Changing the button styles to match the input boxes */
 	.calcbutton {
 		font-size: 100%;
-		border-radius: 10px;
 		box-sizing: border-box;
 		width: 100%;
-		height: auto;
+		height: 100%;
 		padding: 10px;
 	}
 	/* layout of city input box grid */

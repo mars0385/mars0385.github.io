@@ -48,3 +48,10 @@ table {
                     MAIN CSS CODE
 **********************************************************/
 /* All styles not in a media query are for the mobile layout/defaults */
+.navigation {
+    background-color:#3c3b3a;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}

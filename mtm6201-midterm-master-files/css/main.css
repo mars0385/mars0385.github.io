@@ -52,6 +52,7 @@ table {
 /**************** DEFAULT PAGE STYLES ********************/
 html {
     font-family: 'Raleway', sans-serif;
+    color: #3c3b3a;
 }
 footer {
     background-color: #3c3b3a;
@@ -62,6 +63,27 @@ footer {
 .navigation {
     background-color:#3c3b3a;
 }
+
+/* heading and typography styles/sizes */
+h1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 2.5rem;
+    color: #26a682;
+}
+h4 {
+    font-size: 2rem;
+    color: #f2f2f2;
+}
+/******************* PAGE ELEMENT STYLES **********************/
+/* Page logo sizing */
 .logo {
     width: 100px;
     height: auto;

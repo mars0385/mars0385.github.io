@@ -319,7 +319,6 @@ a:hover {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-
 /********************* ABOUT - SERVICES SECTION **********************/
 .services #header {
     background-image: url("services.jpg");
@@ -356,10 +355,9 @@ a:hover {
     font-size: 1.5rem;
     margin-top: 15px;
 }
-
 /********************* ABOUT - THANK YOU SECTION *********************/
 .thanks img{
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 .thanks {
@@ -370,4 +368,50 @@ a:hover {
     padding-top: 40px;
     padding-bottom: 30px;
     font-size: 4rem;
+}
+/*********************************************************************
+                        CONTACT PAGE STYLES
+**********************************************************************/
+/* all styles and media queries for the contact page of the site */
+
+/********************** CONTACT - INTRO SECTION ***********************/
+.contact-img {
+    width: 100%;
+    height: auto;
+}
+
+/********************** CONTACT - CONTACT FORM ************************/
+.contact-form {
+    background-color: #26a682;
+    color: #f2f2f2;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+/* styling typography inside form */
+.contact-form h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.contact-form p {
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+/* styling input boxes */
+.contact-form input {
+    width: 90%;
+    border: none;
+    padding: 10px;
+    color: lightgray;
+    border-radius: 15px;
+}
+
+/******************* CONTACT - OUR LOCATION SECTION *******************/
+/* styling typography in section of page */
+.location h2, h3{
+    font-style: normal;
+    color: #3c3b3a;
+    padding-bottom: 10px;
 }

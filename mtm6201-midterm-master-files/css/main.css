@@ -404,8 +404,24 @@ a:hover {
     width: 90%;
     border: none;
     padding: 10px;
-    color: lightgray;
     border-radius: 15px;
+}
+.contact-form input#message {
+    padding-bottom: 50px;
+}
+/* Styles for submit button */
+.submit-form {
+    margin: 0 auto;
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 20px #3c3b3a;
 }
 
 /******************* CONTACT - OUR LOCATION SECTION *******************/

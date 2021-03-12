@@ -307,13 +307,18 @@ a:hover {
     padding-bottom: 20px;
 }
 /********************* ABOUT - ABOUT SECTION *************************/
+/* section heading styles */
 .about #header{
-    background-image: url("about.jpg");
-    background-color: #26a682;
+    /* background-image: url("../images/about.jpg"); */
+    background: linear-gradient(0deg, rgba(38, 166, 130, 0.5), rgba(38, 166, 130, 0.8)), url("../images/about.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #f2f2f2;
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
+    line-height: 200px;
 }
 .about h2 {
     padding-top: 30px;
@@ -321,12 +326,15 @@ a:hover {
 }
 /********************* ABOUT - SERVICES SECTION **********************/
 .services #header {
-    background-image: url("services.jpg");
-    background-color: #26a682;
+    background: linear-gradient(0deg, rgba(38, 166, 130, 0.5), rgba(38, 166, 130, 0.8)), url("../images/services.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #f2f2f2;
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
+    line-height: 200px;
 }
 .services h2 {
     padding-top: 30px;

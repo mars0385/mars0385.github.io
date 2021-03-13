@@ -503,27 +503,73 @@ a:hover {
     #header {
         grid-column: 1/4;
     }
-    #bar-img {
-        width: 100%;
+    /* bar image stlyes */
+    #bar-div {
         grid-column: 1/2;
+        overflow: hidden;
+        justify-content: center;
     }
+    #bar-img {
+        height: 400px;
+        width: auto;
+        padding-top: 25px;
+    }
+    /* bowling image styles */
+    #bowl-div {
+        grid-column: 3/4;
+        overflow: hidden;
+        justify-content: center;
+    }
+    #bowl-img {
+        height: 350px;
+        width: auto;
+        padding-top: 25px;
+    }
+    /* fitness image styles */
+    #fitness-div {
+        grid-column: 1/2;
+        overflow: hidden;
+        justify-content: center;
+    }
+    #fitness-img {
+        height: 400px;
+        width: auto;
+        padding-top: 25px;
+    }
+    /* climbing image styles */
+    #climbing-div {
+        grid-column: 3/4;
+        overflow: hidden;
+        justify-content: center;
+    }
+    #climbing-img {
+        height: 400px;
+        width: auto;
+        padding-top: 25px;
+    }
+    /* content styles */
     #about-restaurant {
         grid-column: 2/4;
+        padding-left: 10px;
     }
     #about-bowling {
         grid-column: 1/3;
+        padding-right: 10px;
     }
     #about-fitness {
         grid-column: 2/4;
+        padding-left: 10px;
     }
     #about-climbing {
         grid-column: 1/3;
+        padding-right: 10px;
     }
     /* changing the layout of the subscribe bar */
     .subscribe {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        margin-top: 30px;
     }
     .subscribe #h6 {
         grid-column: 1/3;

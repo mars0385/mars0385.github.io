@@ -10,8 +10,163 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-secondary">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
+        <div class="container container-fluid">
+          <a class="navbar-brand text-white" href="index.html">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container bg-light">
+        <!-- Title and introduction -->
+        <h1 class="text-center">Welcome to Bootstrap!</h1>
+        <h2>What is Bootstrap?</h2>
+        <p>Bootstrap is the worlds most popular HTML/CSS framework, created for building Responsive websites.</p>
+        <p>This site is your Bootstrap cheat sheet for the basic Utilities and some of the popular Components Bootstrap has to offer. </p>
+
+        <!-- About Bootstrap -->
+        <h2>About Bootstrap</h2>
+
+        <!-- Utilities -->
+        <h2>Utilities</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col border">
+                    <h3>Colors</h3>
+                    <p>Bootstrap comes with multiple utilities for text colouring.</p>
+                    <div>
+                        <h4>Text Colouring</h4>
+                        <p>The following are all the options for colouring text:</p>
+                        <div class="border">
+                            <p class="text-primary">.text-primary</p>
+                            <p class="text-secondary">.text-secondary</p>
+                            <p class="text-success">.text-success</p>
+                            <p class="text-danger">.text-danger</p>
+                            <p class="text-warning">.text-warning</p>
+                            <p class="text-info">.text-info</p>
+                            <p class="text-light bg-dark">.text-light</p>
+                            <p class="text-dark">.text-dark</p>
+                            <p class="text-body">.text-body</p>
+                            <p class="text-muted">.text-muted</p>
+                            <p class="text-white bg-dark">.text-white</p>
+                            <p class="text-black-50">.text-black-50</p>
+                            <p class="text-white-50 bg-dark">.text-white-50</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Background Colouring</h4>
+                        <p>These utilities also apply to backgrounds, as follows:</p>
+                        <div class="border">
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border">
+                    <h3>Text</h3>
+                    <p>Bootstrap contains different utilities to adjust text alignment, weight, and font styles</p>
+                    <div>
+                        <h4>Text Alignment</h4>
+                        <p>You can use the following classes to easily re-align text and format it to your liking</p>
+                        <div class="border">
+                            <p class="text-start">.text-start</p>
+                            <p class="text-center">.text-center</p>
+                            <p class="text-end">.text-end</p>
+
+                            <p class="text-sm-start">Start aligned text on viewports sized SM or wider (.text-sm-start)</p>
+                            <p class="text-md-start">Start aligned text on viewports sized MD or wider (.text-md-start)</p>
+                            <p class="text-lg-start">Start aligned text on viewports sized LG or wider (.text-lg-start)</p>
+                            <p class="text-xl-start">Start aligned text on viewports sized XL or wider (.text-xl-start)</p>
+                        </div>
+                        <h4>Font Weight & Italics</h4>
+                        <p>These classes allow you to change the boldness of your text, or italicize it</p>
+                        <div class="border"> 
+                            <p class="fw-bold">.fw-bold</p>
+                            <p class="fw-bolder">.fw-bolder</p>
+                            <p class="fw-normal">.fw-normal</p>
+                            <p class="fw-light">.fw-light</p>
+                            <p class="fw-lighter">.fw-lighter</p>
+                            <p class="fst-italic">.fst-italica</p>
+                            <p class="fst-normal">.fst-normal</p>
+                        </div>
+                        <h4>Font Size</h4>
+                        <p>To change the sizing of your text, use the following classes:</p>
+                        <div class="border">
+                            <p class="fs-1">.fs-1 Lorem ipsum dolor</p>
+                            <p class="fs-2">.fs-2 Lorem ipsum dolor</p>
+                            <p class="fs-3">.fs-3 Lorem ipsum dolor</p>
+                            <p class="fs-4">.fs-4 Lorem ipsum dolor</p>
+                            <p class="fs-5">.fs-5 Lorem ipsum dolor</p>
+                            <p class="fs-6">.fs-6 Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border">
+                    <h3>Spacing</h3>
+                    <p>These different utilities allow you to properly format your page layout</p>
+                    <div>
+                        <h4>Margin & Padding</h4>
+                        <p>There are mutliple parts to the margin and padding utilities that need to be considered.</p>
+                        <div class="border">
+                            <p>The naming convention for the utilities is as follows:</p>
+                            <p class="text-danger">(PROPERTY)(SIDE)-(SIZE)</p>
+                            <p>PROPERTY refers to either m (margin) or p (padding)</p>
+                            <p>SIDE refers to one of the following:</p>
+                            <ul>
+                                <li>t - set the top</li>
+                                <li>b - set the bottom</li>
+                                <li>s - set the left</li>
+                                <li>e - set the right</li>
+                                <li>x - set the left and right</li>
+                                <li>y - set the top and bottom</li>
+                                <li>black - set all 4 sides</li>
+                            </ul>
+                            <p>SIZE refers to a value in the 0-5 range, with auto setting margins accordingly</p>
+                            <p class="fw-bold">EXAMPLE: class="pt-2"</p>
+                        </div>
+                        <h4>Horizontal Centering</h4>
+                        <p>The mx-auto utility is used to horizontally center any content</p>
+                        <div>
+                            <div class="mx-auto bg-secondary text-white" style="width: 200px;">
+                                <p class="text-center">Centered element</p>
+                            </div>
+                        </div>
+                        <h4>Gap</h4>
+                        <p>This utility is used to add spacing between grid elements. Put the class of gap-_ with a number value in the blank space in the grid container.</p>
+                        <div>
+                            <div class="d-grid gap-3">
+                                <div class="p-2 bg-light border">Grid item 1</div>
+                                <div class="p-2 bg-light border">Grid item 2</div>
+                                <div class="p-2 bg-light border">Grid item 3</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Components -->
+        <h2>Components</h2>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

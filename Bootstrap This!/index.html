@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap This!</title>
   </head>
   <body class="bg-secondary">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient fixed-top">
         <div class="container container-fluid">
           <a class="navbar-brand text-white" href="index.html">Navbar</a>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -21,7 +21,10 @@
                 <a class="nav-link active text-white" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Features</a>
+                <a class="nav-link text-white" href="#util">Utilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#comp">Components</a>
               </li>
             </ul>
           </div>
@@ -29,23 +32,28 @@
       </nav>
     <div class="container bg-light">
         <!-- Title and introduction -->
-        <h1 class="text-center">Welcome to Bootstrap!</h1>
+        <h1 class="text-center fs-1 text-primary p-3 mt-5">Welcome to Bootstrap!</h1>
         <h2>What is Bootstrap?</h2>
         <p>Bootstrap is the worlds most popular HTML/CSS framework, created for building Responsive websites.</p>
-        <p>This site is your Bootstrap cheat sheet for the basic Utilities and some of the popular Components Bootstrap has to offer. </p>
-
-        <!-- About Bootstrap -->
-        <h2>About Bootstrap</h2>
-
+        <p class="pb-3">This site is your Bootstrap cheat sheet for the basic Utilities and some of the popular Components Bootstrap has to offer. </p>
+        <h2>Getting Started</h2>
+        <p>To use Bootstrap in your code you must go to the Getbootstrap.com website, and click on the "Get Started" button.</p>
+        <p>After you click this button it will take you to the bootstrap introduction, on the right hand side find the link that says "starter template."</p>
+        <p>That tab should bring you to where you can copy the template, and paste it into your html file. This will successfully install Bootstrap.</p>
+        <p class="fw-bold">Or use this link:</p>
+        <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template">Starter Template</a>
+        <hr>
         <!-- Utilities -->
-        <h2>Utilities</h2>
-        <div class="container">
+        <h2 class="fs-1 pt-2" id="util">Utilities</h2>
+        <p>These are some of the utilities that you can use while building your site in Bootstrap.</p>
+        <div class="container pb-4">
             <div class="row">
+                <!-- Colors section of Utilities -->
                 <div class="col border">
-                    <h3>Colors</h3>
+                    <h3 class="fs-2">Colors</h3>
                     <p>Bootstrap comes with multiple utilities for text colouring.</p>
                     <div>
-                        <h4>Text Colouring</h4>
+                        <h4 class="pt-4 fst-italic">Text Colouring</h4>
                         <p>The following are all the options for colouring text:</p>
                         <div class="border">
                             <p class="text-primary">.text-primary</p>
@@ -64,7 +72,7 @@
                         </div>
                     </div>
                     <div>
-                        <h4>Background Colouring</h4>
+                        <h4 class="pt-4 fst-italic">Background Colouring</h4>
                         <p>These utilities also apply to backgrounds, as follows:</p>
                         <div class="border">
                             <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
@@ -80,11 +88,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- Text section of Utilities -->
                 <div class="col border">
-                    <h3>Text</h3>
+                    <h3 class="fs-2">Text</h3>
                     <p>Bootstrap contains different utilities to adjust text alignment, weight, and font styles</p>
                     <div>
-                        <h4>Text Alignment</h4>
+                        <h4 class="pt-4 fst-italic">Text Alignment</h4>
                         <p>You can use the following classes to easily re-align text and format it to your liking</p>
                         <div class="border">
                             <p class="text-start">.text-start</p>
@@ -96,7 +105,7 @@
                             <p class="text-lg-start">Start aligned text on viewports sized LG or wider (.text-lg-start)</p>
                             <p class="text-xl-start">Start aligned text on viewports sized XL or wider (.text-xl-start)</p>
                         </div>
-                        <h4>Font Weight & Italics</h4>
+                        <h4 class="pt-4 fst-italic">Font Weight & Italics</h4>
                         <p>These classes allow you to change the boldness of your text, or italicize it</p>
                         <div class="border"> 
                             <p class="fw-bold">.fw-bold</p>
@@ -104,10 +113,10 @@
                             <p class="fw-normal">.fw-normal</p>
                             <p class="fw-light">.fw-light</p>
                             <p class="fw-lighter">.fw-lighter</p>
-                            <p class="fst-italic">.fst-italica</p>
+                            <p class="fst-italic">.fst-italic</p>
                             <p class="fst-normal">.fst-normal</p>
                         </div>
-                        <h4>Font Size</h4>
+                        <h4 class="pt-4 fst-italic">Font Size</h4>
                         <p>To change the sizing of your text, use the following classes:</p>
                         <div class="border">
                             <p class="fs-1">.fs-1 Lorem ipsum dolor</p>
@@ -119,11 +128,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- Spacing section of Utilities -->
                 <div class="col border">
-                    <h3>Spacing</h3>
+                    <h3 class="fs-2">Spacing</h3>
                     <p>These different utilities allow you to properly format your page layout</p>
                     <div>
-                        <h4>Margin & Padding</h4>
+                        <h4 class="pt-4 fst-italic">Margin & Padding</h4>
                         <p>There are mutliple parts to the margin and padding utilities that need to be considered.</p>
                         <div class="border">
                             <p>The naming convention for the utilities is as follows:</p>
@@ -137,20 +147,21 @@
                                 <li>e - set the right</li>
                                 <li>x - set the left and right</li>
                                 <li>y - set the top and bottom</li>
-                                <li>black - set all 4 sides</li>
+                                <li>blank - set all 4 sides</li>
                             </ul>
                             <p>SIZE refers to a value in the 0-5 range, with auto setting margins accordingly</p>
                             <p class="fw-bold">EXAMPLE: class="pt-2"</p>
                         </div>
-                        <h4>Horizontal Centering</h4>
+                        <h4 class="pt-4 fst-italic">Horizontal Centering</h4>
                         <p>The mx-auto utility is used to horizontally center any content</p>
                         <div>
                             <div class="mx-auto bg-secondary text-white" style="width: 200px;">
                                 <p class="text-center">Centered element</p>
                             </div>
                         </div>
-                        <h4>Gap</h4>
+                        <h4 class="fst-italic">Gap</h4>
                         <p>This utility is used to add spacing between grid elements. Put the class of gap-_ with a number value in the blank space in the grid container.</p>
+                        <p>"gap-3"</p>
                         <div>
                             <div class="d-grid gap-3">
                                 <div class="p-2 bg-light border">Grid item 1</div>
@@ -162,10 +173,161 @@
                 </div>
             </div>
         </div>
+        <hr>
 
         <!-- Components -->
-        <h2>Components</h2>
+        <h2 class="pt-3 fs-1" id="comp">Components</h2>
+        <p>The following are a few examples of Components available for use in Bootstrap.</p>
+        <p>To find these online go to this link:</p>
+        <a href="https://getbootstrap.com/docs/5.0/components">Bootstrap Components</a>
+        <div class="container border mt-4">
+            <div class="row">
+                <!-- Alerts section of Components -->
+                <div class="col">
+                    <h3 class="fst-italic">Alerts</h3>
+                    <p>Alerts are customizable feedback messages. This is used to notify the user of something</p>
+                    <p>Similar to colours & backgrounds, You can choose the style of the alert out of the following options:</p>
+                    <div class="border">
+                        <div class="alert alert-primary" role="alert">
+                            .alert .alert-primary
+                          </div>
+                          <div class="alert alert-secondary" role="alert">
+                            .alert .alert-secondary
+                          </div>
+                          <div class="alert alert-success" role="alert">
+                            .alert .alert-success
+                          </div>
+                          <div class="alert alert-danger" role="alert">
+                            .alert .alert-danger
+                          </div>
+                          <div class="alert alert-warning" role="alert">
+                            .alert .alert-warning
+                          </div>
+                          <div class="alert alert-info" role="alert">
+                            .alert .alert-info
+                          </div>
+                          <div class="alert alert-light" role="alert">
+                            .alert .alert-light
+                          </div>
+                          <div class="alert alert-dark" role="alert">
+                            .alert .alert-dark
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Buttons section of Components -->
+                    <div class="row">
+                        <h3 class="fst-italic">Buttons</h3>
+                        <p>Buttons also have predefined styles, using the same prefixes as in previous utilities and components.</p>
+                        <div class="border">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+    
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                    </div>
+                    <!-- Accordian section of Components section -->
+                    <div class="row">
+                        <h3 class="pt-4 fst-italic">Accordians</h3>
+                        <p>Accordians a dropdown menus that you can hold information inside.</p>
+                        <p>Use the follwing code the create this accordian.</p>
+                        <div class="border">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Accordion Item #1
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Accordion Item #2
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Accordion Item #3
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dropdown section of Components section -->
+                    <div class="row">
+                        <h3 class="pt-4 fst-italic">Dropdowns</h3>
+                        <p>Dropdown buttons are very similar to accordians, but instead of content it is usually used with calls to action.</p>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <!-- Carousel section of Components -->
+                <div class="col">
+                    <h3>Carousel</h3>
+                    <p>Carousels are slideshows of content that will enhance the look of your webpage.</p>
+                    <div class="border">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../images/code.jpg" alt="">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Jumbotron section of Components -->
+                <div class="col">
+                    <h3>Bootstrap Grid</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
 

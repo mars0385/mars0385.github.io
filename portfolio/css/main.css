@@ -48,6 +48,83 @@ table {
 /****************************************************************
                         MAIN CSS
 *****************************************************************/
+html {
+    background-color: #323434;
+    color: white;
+}
 .container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* page splitter */
+.split {
+    width: 100%;
+    height: 10px;
+    background-color: #a112e2;
+    margin-top: 10px;
+}
+/* Font declarations */
+p {
+    font-family: 'Roboto';
+    font-size: 16pt;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald';
+    font-size: 30pt;
+}
+h2  {
+    font-size: 25pt;
+}
+h3 {
+    font-size: 20pt;
+}
+h4 {
+    font-size: 18pt;
+}
+/**************** NAVIGATION STYLES ******************/
+nav {
+    background-color: #1d1d1d;
+}
+#header-logo {
+    width: 220px;
+    height: auto;
+}
+.logo-div {
+    display: flex;
+    justify-content: center;
+}
+.nav-link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 20px;
+}
+.nav-link:hover,
+.nav-link#active:hover {
+    color: #a112e2;
+}
+.nav-link#active {
+    color: #ffaa33;
+}
+/***************** BANNER STYLES *******************/
+#banner {
     background-color: grey;
+}
+.b-logo-div {
+    display: flex;
+    justify-content: center;
+}
+#banner-logo {
+    width: 150px;
+    height: auto;
+}
+#banner-text {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+/**************** ABOUT ME STYLES ******************/
+#about-me {
+    background-image: image("homepage-me.png");
 }

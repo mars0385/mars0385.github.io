@@ -194,9 +194,15 @@ footer {
     padding: 10px;
 }
 /**************** ABOUT ME STYLES ******************/
+#homepage-me {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
 #about-me {
     position: relative;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     height: 600px;
 }
 #about-me::before {
@@ -242,12 +248,15 @@ footer {
     justify-content: center;
     padding-top: 30px;
 }
-
+#software-img.desktop-image {
+    display: none;
+}
 /******************************************************
                     PORTFOLIO PAGE
 *******************************************************/
 #portfolio-background {
     background-image: url("../images/background.png");
+    background-size: auto;
 }
 .artwork {
     display: grid;
@@ -326,5 +335,45 @@ footer {
     }
     #software-img {
         width: 530px;
+    }
+    /******************************************************
+                        CONTACT PAGE
+    *******************************************************/
+    #contact-page {
+        background-image: url("../images/contact-bg.png");
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1000px) {
+    /**************** ABOUT ME STYLES ******************/
+    #about-me {
+        grid-template-columns: 1fr 1fr;
+    }
+    #homepage-me {
+        width: auto;
+        height: auto;
+        opacity: 100%;
+        z-index: 2;
+    }
+    #homepage-me img {
+        width: 410px;
+        
+    }
+    #about-me::before {
+        opacity: 0%;
+        z-index: 1;
+    }
+    /************** SOFTWARE SKILLS STYLES ****************/
+    #software-img.desktop-image {
+        display: block;
+        width: 800px;
+        padding-bottom: 20px;
+    }
+    #software-img.mobile-image {
+        display: none;
+    }
+
+    #contact-page {
+        background-image: none;
     }
 }

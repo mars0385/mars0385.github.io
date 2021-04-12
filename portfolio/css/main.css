@@ -111,6 +111,8 @@ nav {
     background-color: grey;
     position: relative;
     display: block;
+    height: 500px;
+    padding-top: 60px;
 }
 #banner::before {
     content: "";
@@ -125,6 +127,7 @@ nav {
     position: absolute;
     z-index: 1;
     overflow: visible;
+    background-size: cover;
 }
 .b-logo-div {
     display: flex;

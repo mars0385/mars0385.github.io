@@ -113,6 +113,28 @@ nav {
 .nav-div {
     vertical-align: middle;
 }
+/***************** FOOTER STYLES *******************/
+footer {
+    background-color: #300544;
+}
+.footer-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-link:hover,
+.footer-link#active:hover {
+    color: #a112e2;
+}
+.footer-link#active {
+    color: #ffaa33;
+}
 /****************************************************
                 HOMEPAGE STYLES
 *****************************************************/
@@ -220,49 +242,9 @@ nav {
     justify-content: center;
     padding-top: 30px;
 }
-/***************** FOOTER STYLES *******************/
-footer {
-    background-color: #300544;
-}
-.footer-link {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    padding: 20px;
-}
-.footer-link:hover,
-.footer-link#active:hover {
-    color: #a112e2;
-}
-.footer-link#active {
-    color: #ffaa33;
-}
-/****************************************************
-                HOMEPAGE MEDIA QUERIES
-*****************************************************/
-@media screen and (min-width: 680px) {
-    /**************** NAVIGATION STYLES ******************/
-    #header-logo {
-        width: 180px;
-    }
-    #navigation {
-        display: flex;
-    }
-    #home {
-        margin-left: auto;
-    }
-    /************** SOFTWARE SKILLS STYLES ****************/
-    #software-skills{
-        text-align: center;
-    }
-    #software-img {
-        width: 530px;
-    }
-}
 
 /******************************************************
-                    PORTFOLIO PAGE
+PORTFOLIO PAGE
 *******************************************************/
 #portfolio-background {
     background-image: url("../images/background.png");
@@ -277,4 +259,34 @@ footer {
 }
 #black-rhino {
     background-color: grey;
+}
+/****************************************************
+                MEDIA QUERIES
+*****************************************************/
+@media screen and (min-width: 700px) {
+    /**************** NAVIGATION STYLES ******************/
+    #header-logo {
+        width: 180px;
+    }
+    #navigation {
+        display: flex;
+    }
+    #home {
+        margin-left: auto;
+    }
+    .nav-div {
+        vertical-align: bottom;
+    }
+    /**************** FOOTER STYLES ******************/
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+    /************** SOFTWARE SKILLS STYLES ****************/
+    #software-skills{
+        text-align: center;
+    }
+    #software-img {
+        width: 530px;
+    }
 }

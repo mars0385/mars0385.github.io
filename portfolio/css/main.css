@@ -109,10 +109,28 @@ nav {
 /***************** BANNER STYLES *******************/
 #banner {
     background-color: grey;
+    position: relative;
+    display: block;
+}
+#banner::before {
+    content: "";
+    background-image: url("../images/mobile-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    overflow: visible;
 }
 .b-logo-div {
     display: flex;
     justify-content: center;
+    z-index: 2;
+    position: relative;
 }
 #banner-logo {
     width: 150px;
@@ -122,10 +140,14 @@ nav {
     display: flex;
     justify-content: center;
     padding: 10px;
+    z-index: 2;
+    position: relative;
 }
 #port-arrow {
     background-color: #ffaa33;
     border: none;
+    z-index: 2;
+    position: relative;
 }
 #port-arrow:hover {
     background-color: #a112e2;
@@ -140,6 +162,7 @@ nav {
 #about-me {
     position: relative;
     display: block;
+    height: 500px;
 }
 #about-me::before {
     content: "";
@@ -166,5 +189,23 @@ nav {
 }
 /************** SOFTWARE SKILLS STYLES ****************/
 #software-skills {
-    background-color: grey;
+    background-color: #323434;
+    /* display: flex;
+    justify-content: center; */
 }
+#software-img-div {
+    display: flex;
+    justify-content: center;
+}
+#software-img {
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
+/***************** FOOTER STYLES *******************/
+footer {
+    background-color: #300544;
+}
+/****************************************************
+                HOMEPAGE MEDIA QUERIES
+*****************************************************/

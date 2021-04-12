@@ -338,6 +338,13 @@ footer {
         width: 530px;
     }
     /******************************************************
+                        PORTFOLIO PAGE
+    *******************************************************/
+    .artwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    /******************************************************
                         CONTACT PAGE
     *******************************************************/
     #contact-page {
@@ -345,6 +352,7 @@ footer {
         background-size: cover;
     }
 }
+
 @media screen and (min-width: 1000px) {
     /**************** ABOUT ME STYLES ******************/
     #about-me {
@@ -388,5 +396,12 @@ footer {
     }
     input {
         padding-bottom: 20px;
+    }
+    /******************************************************
+                        PORTFOLIO PAGE
+    *******************************************************/
+    .artwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }

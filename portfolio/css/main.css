@@ -249,6 +249,9 @@ footer {
     #navigation {
         display: flex;
     }
+    #home {
+        margin-left: auto;
+    }
     /************** SOFTWARE SKILLS STYLES ****************/
     #software-skills{
         text-align: center;
@@ -261,6 +264,9 @@ footer {
 /******************************************************
                     PORTFOLIO PAGE
 *******************************************************/
+#portfolio-background {
+    background-image: url("../images/background.png");
+}
 .artwork {
     display: grid;
     grid-template-columns: 1fr 1fr;

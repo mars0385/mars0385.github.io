@@ -113,6 +113,9 @@ nav {
 .nav-div {
     vertical-align: middle;
 }
+/****************************************************
+                HOMEPAGE STYLES
+*****************************************************/
 /***************** BANNER STYLES *******************/
 #banner {
     background-color: grey;
@@ -253,4 +256,19 @@ footer {
     #software-img {
         width: 530px;
     }
+}
+
+/******************************************************
+                    PORTFOLIO PAGE
+*******************************************************/
+.artwork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.work img{
+    width: 100%;
+    object-fit: cover;
+}
+#black-rhino {
+    background-color: grey;
 }

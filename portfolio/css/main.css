@@ -84,6 +84,10 @@ h4 {
 nav {
     background-color: #1d1d1d;
 }
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 #header-logo {
     width: 220px;
     height: auto;
@@ -105,6 +109,9 @@ nav {
 }
 .nav-link#active {
     color: #ffaa33;
+}
+.nav-div {
+    vertical-align: middle;
 }
 /***************** BANNER STYLES *******************/
 #banner {
@@ -165,7 +172,7 @@ nav {
 #about-me {
     position: relative;
     display: block;
-    height: 500px;
+    height: 600px;
 }
 #about-me::before {
     content: "";
@@ -183,8 +190,12 @@ nav {
 }
 #about-me h1, #about-me p, #about-me h3{
     padding: 10px;
+    padding-top: 20px;
     z-index: 2;
     position: relative;
+}
+#about-me h1 {
+    padding-top: 50px;
 }
 #about-me h3 {
     text-decoration: none;
@@ -193,8 +204,9 @@ nav {
 /************** SOFTWARE SKILLS STYLES ****************/
 #software-skills {
     background-color: #323434;
-    /* display: flex;
-    justify-content: center; */
+}
+#software-skills h1 {
+    padding-top: 20px;
 }
 #software-img-div {
     display: flex;
@@ -209,6 +221,36 @@ nav {
 footer {
     background-color: #300544;
 }
+.footer-link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-link:hover,
+.footer-link#active:hover {
+    color: #a112e2;
+}
+.footer-link#active {
+    color: #ffaa33;
+}
 /****************************************************
                 HOMEPAGE MEDIA QUERIES
 *****************************************************/
+@media screen and (min-width: 680px) {
+    /**************** NAVIGATION STYLES ******************/
+    #header-logo {
+        width: 180px;
+    }
+    #navigation {
+        display: flex;
+    }
+    /************** SOFTWARE SKILLS STYLES ****************/
+    #software-skills{
+        text-align: center;
+    }
+    #software-img {
+        width: 530px;
+    }
+}

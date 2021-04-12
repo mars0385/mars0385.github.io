@@ -244,7 +244,7 @@ footer {
 }
 
 /******************************************************
-PORTFOLIO PAGE
+                    PORTFOLIO PAGE
 *******************************************************/
 #portfolio-background {
     background-image: url("../images/background.png");
@@ -259,6 +259,44 @@ PORTFOLIO PAGE
 }
 #black-rhino {
     background-color: grey;
+}
+/******************************************************
+                    CONTACT PAGE
+*******************************************************/
+#contact-form h1 {
+    padding-top: 20px;
+}
+.contact-form {
+    color: #f2f2f2;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+/* styling typography inside form */
+.contact-form h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.contact-form p {
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+/* styling input boxes */
+.contact-form input {
+    width: 90%;
+    border: none;
+    padding: 10px;
+}
+.contact-form input#message {
+    padding-bottom: 50px;
+}
+.submit-form {
+    background-color: #ffaa33;
+    color: #f2f2f2;
+    margin-top: 20px;
+    padding: 20px;
 }
 /****************************************************
                 MEDIA QUERIES

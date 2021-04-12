@@ -272,8 +272,12 @@ footer {
 /******************************************************
                     CONTACT PAGE
 *******************************************************/
-#contact-form h1 {
+#contact-page-div h1 {
     padding-top: 20px;
+}
+#contact-page-div {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .contact-form {
     color: #f2f2f2;
@@ -282,15 +286,9 @@ footer {
     margin-bottom: 50px;
     margin-top: 10px;
 }
-/* styling typography inside form */
-.contact-form h5 {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 10px;
-}
 .contact-form p {
     padding-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 /* styling input boxes */
 .contact-form input {
@@ -299,13 +297,16 @@ footer {
     padding: 10px;
 }
 .contact-form input#message {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 .submit-form {
     background-color: #ffaa33;
     color: #f2f2f2;
     margin-top: 20px;
     padding: 20px;
+}
+.contact-image {
+    display: none;
 }
 /****************************************************
                 MEDIA QUERIES
@@ -375,5 +376,17 @@ footer {
 
     #contact-page {
         background-image: none;
+    }
+    #contact-page-div {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-image {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    input {
+        padding-bottom: 20px;
     }
 }

@@ -146,11 +146,13 @@ footer {
     height: 500px;
     padding-top: 60px;
 }
+/* setting the page banner art */
 #banner::before {
     content: "";
     background-image: url("../images/mobile-banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -159,7 +161,6 @@ footer {
     position: absolute;
     z-index: 1;
     overflow: visible;
-    background-size: cover;
 }
 .b-logo-div {
     display: flex;
@@ -205,6 +206,7 @@ footer {
     grid-template-columns: 1fr;
     height: 600px;
 }
+/* about me background image */
 #about-me::before {
     content: "";
     background-image: url("../images/homepage-me.png");
@@ -219,6 +221,7 @@ footer {
     z-index: 1;
     overflow: visible;
 }
+/* setting displays for about me text content */
 #about-me h1, #about-me p, #about-me h3{
     padding: 10px;
     padding-top: 20px;
@@ -228,10 +231,11 @@ footer {
 #about-me h1 {
     padding-top: 50px;
 }
-#about-me h3 {
+#contact-me-but {
     text-decoration: none;
     color: #ffaa33;
 }
+
 /************** SOFTWARE SKILLS STYLES ****************/
 #software-skills {
     background-color: #323434;
@@ -255,69 +259,93 @@ footer {
                     PORTFOLIO PAGE
 *******************************************************/
 #portfolio-background {
-    background-image: url("../images/background.png");
-    background-size: auto;
+    background-color: #323434;
+    height: 1350px;
+    padding-top: 40px;
 }
 .artwork {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
 }
-/* .work img{
-    width: 100%;
-    object-fit: cover;
-} */
+/* setting page artwork size */
 .work {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
 }
+/* portfolio pieces */
 #dragon {
     background-image: url("../images/portfolio work/dragon.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #rhino {
-    background-image: url("../images/portfolio work/black rhino.png");
+    background-image: url("../images/portfolio work/black-rhino.png");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
+    background-color: #f2f2f2;
 }
 #poster1 {
-    background-image: url("../images/portfolio work/poster 1.jpg");
+    background-image: url("../images/portfolio work/poster1.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #poster2 {
-    background-image: url("../images/portfolio work/poster 2.jpg");
+    background-image: url("../images/portfolio work/poster2.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #stroll {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/stroll.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #brick {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/brick.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #sunset {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/sunset.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #green {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/greenery.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 #statue {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/statue.jpg");
     background-size: cover;
     overflow: hidden;
 }
 #mini-coop {
-    background-image: url("../images/portfolio work/dragon.jpg");
+    background-image: url("../images/portfolio work/mini-coop.jpg");
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#zula {
+    background-image: url("../images/portfolio work/zula.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#marys-moods {
+    background-image: url("../images/portfolio work/Marys-Moods.png");
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 /******************************************************
@@ -391,9 +419,12 @@ footer {
     /******************************************************
                         PORTFOLIO PAGE
     *******************************************************/
+    #portfolio-background {
+        height: 900px;
+    }
     .artwork {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     /******************************************************
                         CONTACT PAGE
@@ -451,8 +482,11 @@ footer {
     /******************************************************
                         PORTFOLIO PAGE
     *******************************************************/
+    #portfolio-background {
+        height: 800px;
+    }
     .artwork {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

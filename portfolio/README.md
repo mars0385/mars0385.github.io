@@ -1,0 +1,4 @@
+This is my final Responsive Web Design coding project. Designed and thought out in my User Experience Design class, the site was coded from scratch using CSS Grid and flexbox.
+All images and content are my own, created from scratch for the project. The main issue I faced while creating the portfolio site was figuring out the actually portfolio page.
+Creating a layout for the grids that cause them to properly fit, while also trying to display the images the best I could proved to be difficult and I wasn't sure how to approach that.
+Creating the portfolio allowed me to have a deeper understanding of CSS Grids and in css background images, especially trying to get the background images of the home page to have a different opacity as the content.

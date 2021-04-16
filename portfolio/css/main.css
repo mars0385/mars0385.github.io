@@ -262,12 +262,63 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.work img{
+/* .work img{
     width: 100%;
     object-fit: cover;
+} */
+.work {
+    width: 300px;
+    height: 300px;
 }
-#black-rhino {
-    background-color: grey;
+#dragon {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#rhino {
+    background-image: url("../images/portfolio work/black rhino.png");
+    background-size: cover;
+    overflow: hidden;
+}
+#poster1 {
+    background-image: url("../images/portfolio work/poster 1.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#poster2 {
+    background-image: url("../images/portfolio work/poster 2.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#stroll {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#brick {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#sunset {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#green {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#statue {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#mini-coop {
+    background-image: url("../images/portfolio work/dragon.jpg");
+    background-size: cover;
+    overflow: hidden;
 }
 /******************************************************
                     CONTACT PAGE
